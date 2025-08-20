@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 const mongoose = require('mongoose');
 
-mongoose.connect("sua conexão aqui");
+mongoose.connect("mongodb://seu_usuario:sua_senha@localhost:27017/?authSource=admin");
 
 app.use(express.json());
 
